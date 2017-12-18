@@ -1,11 +1,14 @@
 import React, {Component} from 'react'
 
-class Home extends Component {
+class HomeContainer extends Component {
   render () {
     return (
-      <h1>hello</h1>
+      <div>
+        <h1>hello</h1>
+        <button onClick={this.props.searchPictures}>HOMEPAGE</button>
+      </div>
     )
   }
 }
 
-export default Home
+export default HomeContainer

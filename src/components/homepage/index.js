@@ -1,11 +1,20 @@
-import React, {Component} from 'react'
+import {bindActionCreators} from 'redux'
+import {connect} from 'react-redux'
+import * as actionCreators from '../../actions/actionCreators'
 
-class HomeContainer extends Component {
-  render () {
-    return (
-      <h1>hello</h1>
-    )
+import Home from './Home'
+
+function mapStateToProps (state) {
+  return {
+    picState: state.picState,
+    favState: state.favState
   }
 }
+
+function mapDispatchToProps (dispatch) {
+  return bindActionCreators(actionCreators, dispatch)
+}
+
+const HomeContainer = connect(mapStateToProps, mapDispatchToProps)(Home)
 
 export default HomeContainer
