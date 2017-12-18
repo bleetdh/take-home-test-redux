@@ -1,7 +1,7 @@
-function picturesReducer (state = [], action) {
+function picturesReducer (state = 0, action) {
   switch (action.type) {
     case 'SEARCH_PICTURES':
-      console.log('search pics')
+      state += 1
       return state
     case 'FETCH_MORE_PICTURES':
       console.log('fetch more')
