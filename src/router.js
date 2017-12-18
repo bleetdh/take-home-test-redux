@@ -14,5 +14,4 @@ export default (
       </Switch>
     </Index>
   </BrowserRouter>
-
 )

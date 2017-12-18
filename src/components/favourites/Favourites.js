@@ -5,7 +5,7 @@ class Favourites extends Component {
     return (
       <div>
         <h1>favvvvvvv</h1>
-        <button>FAVOURITE</button>
+        <button onClick={this.props.likePicture}>FAVOURITE</button>
       </div>
     )
   }

@@ -1,5 +1,6 @@
 import {bindActionCreators} from 'redux'
 import {connect} from 'react-redux'
+import { withRouter } from 'react-router'
 import * as actionCreators from '../actions/actionCreators'
 
 import App from './App'
@@ -15,6 +16,6 @@ function mapDispatchToProps (dispatch) {
   return bindActionCreators(actionCreators, dispatch)
 }
 
-const Index = connect(mapStateToProps, mapDispatchToProps)(App)
+const Index = withRouter(connect(mapStateToProps, mapDispatchToProps)(App))
 
 export default Index

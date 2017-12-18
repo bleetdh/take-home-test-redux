@@ -11,7 +11,7 @@ class App extends Component {
           <h2>Welcome to React</h2>
         </div>
         <ul>
-          <li><NavLink to='/' activeClassName='active'>Search</NavLink></li>
+          <li><NavLink to='/' activeClassName='active'>Home</NavLink></li>
           <li><NavLink to='favourites' activeClassName='active'>Favourites</NavLink></li>
         </ul>
         {this.props.children}
