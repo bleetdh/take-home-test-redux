@@ -1,18 +1,18 @@
 import React from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
-import App from './components/App'
-import Home from './components/homepage/Home'
-import Favourites from './components/favourites/Favourites'
+import Index from './components/index'
+import HomeContainer from './components/homepage/index'
+import FavouritesContainer from './components/favourites/index'
 
 export default (
   <BrowserRouter>
-    <App>
+    <Index>
       <Switch>
-        <Route exact path='/' component={Home} />
-        <Route path='/favourites' component={Favourites} />
+        <Route exact path='/' component={HomeContainer} />
+        <Route path='/favourites' component={FavouritesContainer} />
       </Switch>
-    </App>
+    </Index>
   </BrowserRouter>
 
 )
